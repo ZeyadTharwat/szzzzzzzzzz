@@ -1,0 +1,263 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="build.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Pixgra</title>
+  </head>
+  <body class="font-montserrat">
+    <section class="container  mx-auto">
+      <div
+        class="flex sm:gap-5 gap-0 blg:flex-row flex-col-reverse sm:flex-col !justify-center"
+      >
+        <div class="basis-1/2">
+          <div class="relative sm:bottom-0 bottom-2.5 z-[999999999] ">
+            <div >
+              <img
+                class="border-main border rounded-20px mx-auto w-auto blg:w-full"
+                src="Assets/Building3D.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute xs:bottom-6 bg-white pb-3 pt-5 xs:max-w-[490px] max-w-[375] bottom-0 rounded-20px translate-x-1/2 right-1/2 shadow-secondary z-50 thumbs-slider"
+            >
+              <button
+                class="bg-main p-1 rounded-5px absolute right-5 filterbtn z-50 -top-4"
+              >
+                <img class="filter" src="Assets/filter.svg" alt="" />
+                <img
+                  class="hidden exitfilter"
+                  width="16"
+                  height="16"
+                  src="Assets/close.svg"
+                  alt=""
+                />
+              </button>
+
+              <div class="swiper2 mySwiper2 overflow-hidden">
+                <div class="swiper-wrapper mb-3">
+                  <div class="swiper-slide building" id="first-building">
+                    <div>
+                      <div class="gallery-thumbs__img">
+                        <img
+                          class="mx-auto"
+                          src="Assets/ApartmentThumb.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-8px my-1">Complex rezidential</p>
+                      <h1 class="text-xxs font-semibold mt-px">
+                        George Cosbuc 27
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="swiper-slide building" id="second-building">
+                    <div>
+                      <div class="gallery-thumbs__img">
+                        <img
+                          class="mx-auto"
+                          src="Assets/ApartmentThumb.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-8px my-1">Complex rezidential</p>
+                      <h1 class="text-xxs font-semibold mt-px">
+                        George Cosbuc 27
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="swiper-slide building" id="third-building">
+                    <div>
+                      <div class="gallery-thumbs__img">
+                        <img
+                          class="mx-auto"
+                          src="Assets/ApartmentThumb.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-8px my-1">Complex rezidential</p>
+                      <h1 class="text-xxs font-semibold mt-px">
+                        George Cosbuc 27
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="swiper-slide building" id="fourth-building">
+                    <div>
+                      <div class="gallery-thumbs__img">
+                        <img
+                          class="mx-auto"
+                          src="Assets/ApartmentThumb.png"
+                          alt=""
+                        />
+                      </div>
+                      <p class="text-8px my-1">Complex rezidential</p>
+                      <h1 class="text-xxs font-semibold mt-px">
+                        George Cosbuc 27
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div
+                class="bg-white border border-t-black mt-1 xs:px-16 px-4 filters hidden"
+              >
+                <form action="">
+                  <div class="pt-5 flex gap-6 justify-between mb-3">
+                    <div>
+                      <p class="text-xxs font-medium mb-2">Etaj:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 w-[91px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-xxs font-medium mb-2">Tip Oferta:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 w-[91px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-xxs font-medium mb-2">Compartimentare:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 w-[115px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex gap-5 justify-between mb-3">
+                    <div class="">
+                      <p class="text-xxs font-medium mb-2">Stadiu:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 xs:w-[170px] w-[163px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                    <div class="">
+                      <p class="text-xxs font-medium mb-2">Tip Oferta:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 xs:w-[170px] w-[163px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex gap-5 justify-between mb-3">
+                    <div class="">
+                      <p class="text-xxs font-medium mb-2">Etaj:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 xs:w-[170px] w-[163px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                    <div class="">
+                      <p class="text-xxs font-medium mb-2">Suprafata Utila:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 xs:w-[170px] w-[163px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex gap-6 justify-between mb-6 pb-0.5">
+                    <div class="">
+                      <p class="text-xxs font-medium mb-2">Stadiu:</p>
+                      <input
+                        class="rounded-10px border-main border h-9 w-[163px]"
+                        placeholder="Toate"
+                        type="text"
+                      />
+                    </div>
+                    <div class="">
+                      <p class="text-xxs font-medium mb-2">Etaj:</p>
+                      <div class="flex items-center">
+                        <input
+                          class="rounded-10px border-main border h-9 xs:w-[75px] w-[70px]"
+                          placeholder="0"
+                          type="text"
+                        />
+                        <p class="mx-1 text-xxs font-medium">To</p>
+                        <input
+                          class="rounded-10px border-main border h-9 xs:w-[75px] w-[70px]"
+                          placeholder="80,000"
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between">
+                    <div class="flex items-center gap-1">
+                      <img src="Assets/resetfilters.svg" alt="" />
+                      <p class="font-semibold text-xxs">Reseteaza Filtrele</p>
+                    </div>
+                    <div class="flex gap-3">
+                      <button
+                        class="bg-main text-white rounded-10px py-2 text-xxs font-semibold px-7"
+                      >
+                        Renunta
+                      </button>
+                      <button
+                        class="bg-gray-15 text-gray-20 rounded-10px py-2 text-xxs font-semibold px-7"
+                      >
+                        Salveaza
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div id="right-side" class="relative blg:max-w-[50%] max-w-full">
+            <div
+            class="absolute  flex gap-4 top-[18px] translate-x-1/2 right-1/2 z-[99999999]"
+          >
+            <button
+              class="rounded-10px bg-main w-[86px] xl:w-[130px] xl:text-lg py-1.5  text-xxs font-semibold text-white bg-gray-15 text-gray-20 interior"
+              onclick="showInterior()"
+            >
+              Interior
+            </button>
+            <button
+              class="rounded-10px bg-gray-15 w-[86px] py-1.5  text-xxs sm:hidden font-semibold text-gray-20 block specificatii"
+              onclick="showSpec()"
+            >
+              Specificatii
+            </button>
+
+            <button
+              class="rounded-10px bg-gray-15 w-[86px] py-1.5 xl:w-[130px] xl:text-lg  text-xxs font-semibold text-gray-20"
+            >
+              Plan
+            </button>
+          </div>
+              <div class="swiper mySwiper blg:max-w-full max-w-[550px]" style="z-index: 999999;">
+  
+                <div class="pricetag z-50">
+                </div>
+                <div class="swiper-wrapper  apartmentimgs" id="swiper-wrapper"></div>
+                <div class="swiper-pagination !sm:bottom-0 !bottom-5 "></div>
+              </div>
+          </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
+    <script defer src="script.js"></script>
+  </body>
+</html>

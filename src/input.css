@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.swiper {
+  max-height: 276px;
+  width: auto;
+  height: 100%;
+}
+.swiper2 {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev {
+  background-image: url(Assets/arrowprev.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  padding: 12px;
+}
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+.swiper-button-next {
+  background-image: url(Assets/arrownext.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  padding: 12px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 1 !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+.swiper-pagination-bullet-active {
+  background: #a00006 !important;
+  opacity: 1 !important;
+  border: none;
+  width: 6px !important;
+  height: 6px !important;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  font-weight: 500;
+  font-size: 10px;
+  color: black;
+}
+
+.active {
+  color: #a00006;
+}
+.active:before {
+  border-radius: 2px;
+  z-index: 9999;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -12px;
+  height: 5px;
+  width: 56px;
+  border-bottom: 3px solid #a00006;
+}
+
+.active .gallery-thumbs__img {
+  position: relative;
+  width: 100%;
+}
+.active .gallery-thumbs__img:after {
+  border-radius: 10px;
+  content: "\A";
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: linear-gradient(180deg, #a00006 0%, rgba(160, 0, 6, 0.22) 100%);
+}
+@media only screen and (max-width: 1060px) and (min-width: 992px) {
+  .thumbs-slider {
+    max-width: 375px !important;
+  }
+  .filters {
+    padding: 0 10px;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+.show-flex {
+  display: flex !important;
+}
+
+.show-block{
+  display: block !important;
+}
+
