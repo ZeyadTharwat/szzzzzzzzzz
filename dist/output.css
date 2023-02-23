@@ -547,14 +547,6 @@ video {
   bottom: 0px;
 }
 
-.bottom-2{
-  bottom: 0.5rem;
-}
-
-.bottom-2\.5{
-  bottom: 0.625rem;
-}
-
 .bottom-\[11px\]{
   bottom: 11px;
 }
@@ -662,6 +654,10 @@ video {
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
 .\!w-full{
   width: 100% !important;
 }
@@ -722,6 +718,10 @@ video {
 
 .flex-col-reverse{
   flex-direction: column-reverse;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .items-center{
@@ -1084,6 +1084,10 @@ video {
   color: black;
 }
 
+input:focus{
+  outline: none;
+}
+
 .active {
   color: #a00006;
 }
@@ -1138,6 +1142,24 @@ video {
 
 .show-block{
   display: block !important;
+}
+
+@media only screen and (max-width: 375.01px) {
+  .thumbs-slider{
+    max-width: 300px !important;
+  }
+
+  form div *{
+    justify-content: center;
+  }
+
+  .first-input div input , .fourth-input div input{
+    width: 70px !important;
+  }
+
+  .second-input div input , .third-input div input {
+    width: 120px !important;
+  }
 }
 
 @media (min-width: 490px){
@@ -1280,4 +1302,3 @@ video {
     line-height: 32px;
   }
 }
-

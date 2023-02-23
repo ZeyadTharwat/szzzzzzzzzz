@@ -63,7 +63,9 @@
   font-size: 10px;
   color: black;
 }
-
+input:focus{
+  outline: none;
+}
 .active {
   color: #a00006;
 }
@@ -115,7 +117,17 @@
   display: block !important;
 }
 @media only screen and (max-width: 375.01px) {
+
 .thumbs-slider{
 max-width: 300px !important;
 } 
+form div *{
+  justify-content: center;
+}
+.first-input div input , .fourth-input div input{
+width: 70px !important;
+}
+.second-input div input , .third-input div input {
+  width: 120px !important;
+}
 }
