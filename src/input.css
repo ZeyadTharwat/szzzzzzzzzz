@@ -114,4 +114,8 @@
 .show-block{
   display: block !important;
 }
-
+@media only screen and (max-width: 375.01px) {
+.thumbs-slider{
+max-width: 300px !important;
+} 
+}
