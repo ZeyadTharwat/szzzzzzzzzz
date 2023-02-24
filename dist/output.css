@@ -646,6 +646,10 @@ video {
   display: none;
 }
 
+.h-1\/2{
+  height: 50%;
+}
+
 .h-9{
   height: 2.25rem;
 }
@@ -654,8 +658,8 @@ video {
   height: 100%;
 }
 
-.h-screen{
-  height: 100vh;
+.max-h-full{
+  max-height: 100%;
 }
 
 .\!w-full{
@@ -707,13 +711,21 @@ video {
   max-width: 100%;
 }
 
-.basis-1\/2{
-  flex-basis: 50%;
+.\!flex-grow{
+  flex-grow: 1 !important;
+}
+
+.grow{
+  flex-grow: 1;
 }
 
 .translate-x-1\/2{
   --tw-translate-x: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .flex-col-reverse{
@@ -726,10 +738,6 @@ video {
 
 .items-center{
   align-items: center;
-}
-
-.\!justify-center{
-  justify-content: center !important;
 }
 
 .justify-between{
@@ -1020,9 +1028,13 @@ video {
 }
 
 .swiper {
-  max-height: 276px;
   width: auto;
-  height: 100%;
+  height: auto;
+}
+
+img{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper2 {
@@ -1162,6 +1174,12 @@ input:focus{
   }
 }
 
+@media only screen and (min-width: 992px) {
+  #removeDiv{
+    flex-grow: 1;
+  }
+}
+
 @media (min-width: 490px){
   .xs\:bottom-6{
     bottom: 1.5rem;
@@ -1211,26 +1229,30 @@ input:focus{
     display: block;
   }
 
-  .sm\:hidden{
-    display: none;
-  }
-
-  .sm\:flex-col{
-    flex-direction: column;
-  }
-
-  .sm\:gap-5{
-    gap: 1.25rem;
-  }
-
   .sm\:pl-0{
     padding-left: 0px;
   }
 }
 
 @media (min-width: 992px){
-  .blg\:w-full{
-    width: 100%;
+  .blg\:mt-0{
+    margin-top: 0px;
+  }
+
+  .blg\:\!block{
+    display: block !important;
+  }
+
+  .blg\:\!hidden{
+    display: none !important;
+  }
+
+  .blg\:h-full{
+    height: 100%;
+  }
+
+  .blg\:\!w-5{
+    width: 1.25rem !important;
   }
 
   .blg\:max-w-\[50\%\]{
@@ -1243,6 +1265,34 @@ input:focus{
 
   .blg\:flex-row{
     flex-direction: row;
+  }
+
+  .blg\:\!gap-5{
+    gap: 1.25rem !important;
+  }
+
+  .blg\:pl-0{
+    padding-left: 0px;
+  }
+
+  .blg\:\!text-2xl{
+    font-size: 30px !important;
+    line-height: 36px !important;
+  }
+
+  .blg\:\!text-base{
+    font-size: 16px !important;
+    line-height: 19.5px !important;
+  }
+
+  .blg\:\!text-lg{
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  .blg\:\!text-xl{
+    font-size: 24px !important;
+    line-height: 32px !important;
   }
 }
 

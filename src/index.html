@@ -13,15 +13,15 @@
     <title>Pixgra</title>
   </head>
   <body class="font-montserrat">
-    <section class="container h-screen mx-auto">
+    <section class="container h-full mx-auto ">
       <div
-        class="flex sm:gap-5 gap-0 blg:flex-row flex-col-reverse sm:flex-col !justify-center"
+        class="flex blg:!gap-5 gap-0 blg:flex-row flex-col-reverse h-full justify-between"
       >
-        <div class="basis-1/2">
-          <div class="relative sm:bottom-0  z-[999999999] ">
-            <div >
+        <div class=" h-1/2 blg:h-full grow">
+          <div class="relative sm:bottom-0  z-[999999999] h-full">
+            <div class="h-full">
               <img
-                class="border-main border rounded-20px mx-auto w-auto blg:w-full"
+                class="border-main border rounded-20px max-h-full mx-auto w-full h-full object-cover "
                 src="Assets/Building3D.png"
                 alt=""
               />
@@ -223,7 +223,7 @@
             </div>
           </div>
         </div>
-          <div id="right-side" class="relative blg:max-w-[50%] max-w-full">
+          <div id="right-side" class="relative blg:max-w-[50%] max-w-full flex flex-col justify-between grow h-1/2 blg:h-full">
             <div
             class="absolute  flex gap-4 top-[18px] translate-x-1/2 right-1/2 z-[99999999]"
           >
@@ -234,7 +234,7 @@
               Interior
             </button>
             <button
-              class="rounded-10px bg-gray-15 w-[86px] py-1.5  text-xxs sm:hidden font-semibold text-gray-20 block specificatii"
+              class="rounded-10px bg-gray-15 w-[86px] py-1.5  text-xxs blg:!hidden font-semibold text-gray-20 block specificatii"
               onclick="showSpec()"
             >
               Specificatii
@@ -246,7 +246,7 @@
               Plan
             </button>
           </div>
-              <div class="swiper mySwiper blg:max-w-full max-w-[550px]" style="z-index: 999999;">
+              <div class="swiper mySwiper blg:max-w-full !flex-grow " style="z-index: 999999;">
   
                 <div class="pricetag z-50">
                 </div>

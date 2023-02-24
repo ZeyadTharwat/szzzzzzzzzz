@@ -74,54 +74,54 @@ window.onload = () => {
   const div = document.createElement("div");
   div.setAttribute("id", "removeDiv");
   div.innerHTML = `                
-    <div class="lg:max-w-full max-w-[550px] mx-auto sm:pl-0 pl-2.5 hidden sm:block apartmentinfo mt-14 sm:mt-0">
+    <div class="lg:max-w-full blg:pl-0 pl-2.5 hidden blg:!block apartmentinfo mt-14 blg:mt-0">
     <div class="mt-5">
-      <div class="flex mb-5 pb-0.5 justify-between">
+      <div class="flex mb-5 pb-0.5 justify-between gap-4">
         <div>
-          <h1 class="font-semibold xl:text-xl text-xxs mb-1 ">Apartment</h1>
-          <h1 class="font-bold text-base xl:text-2xl">${buildingData.camere} Camere</h1>
+          <h1 class="font-semibold blg:!text-xl text-xxs mb-1 ">Apartment</h1>
+          <h1 class="font-bold text-base blg:!text-2xl">${buildingData.camere} Camere</h1>
         </div>
         <div
           class="flex self-start items-center xl:gap-2 gap-0.5 rounded-10px bg-gray-10 pr-2 pl-[5px] py-[3px] xl:py-2 xl:pr-4 xl:pl-4"
         >
-          <div><img src="Assets/copy.svg" class="xl:w-5 w-auto" alt="" /></div>
-          <h1 class="text-gray-20 xl:text-xl text-xxs font-semibold">
+          <div><img src="Assets/copy.svg" class="blg:!w-5 w-auto" alt="" /></div>
+          <h1 class="text-gray-20 blg:!text-xl text-xxs font-semibold">
             Copiaza Link-Ul
           </h1>
         </div>
       </div>
-      <div class="flex justify-between mb-6">
+      <div class="flex justify-between mb-6 gap-4">
         <div>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Etaj: <span class="font-semibold">${buildingData.etaj}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Stadiu: <span class="font-semibold">${buildingData.stadiu}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Suprafata Utila: <span class="font-semibold">${buildingData.utila}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Tip Oferta: <span class="font-semibold">${buildingData.oferta}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium">
+          <h1 class="text-xxs blg:!text-base font-medium">
             Nr. Bai: <span class="font-semibold">${buildingData.bai}</span>
           </h1>
         </div>
         <div>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Etaj: <span class="font-semibold">${buildingData.etaj}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Stadiu: <span class="font-semibold">${buildingData.stadiu}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Suprafata Utila: <span class="font-semibold">${buildingData.utila}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium mb-2">
+          <h1 class="text-xxs blg:!text-base font-medium mb-2">
             Compartimentare: <span class="font-semibold">${buildingData.compartimentare}</span>
           </h1>
-          <h1 class="text-xxs xl:text-base font-medium">
+          <h1 class="text-xxs blg:!text-base font-medium">
             Nr. Balcoane: <span class="font-semibold">${buildingData.balcoane}</span>
           </h1>
         </div>
@@ -129,14 +129,14 @@ window.onload = () => {
           class="flex rounded-tl-20px gap-2 rounded-bl-20px mt-auto bg-main text-white self-start pl-[14px] pt-2.5 pb-1.5 pr-4 items-center"
         >
           <img src="Assets/Phone.svg" alt="" />
-          <h1 class="font-semibold xl:text-base xs:text-sm text-xxs">+40 752 925 928</h1>
+          <h1 class="font-semibold blg:!text-base xs:text-sm text-xxs">+40 752 925 928</h1>
         </div>
       </div>
     </div>
     <div class="mb-3 sm:mb-0">
-      <h1 class="mb-2 font-extrabold text-xxs xl:text-lg">Alte Detalii</h1>
+      <h1 class="mb-2 font-extrabold text-xxs blg:!text-lg">Alte Detalii</h1>
       <p
-        class="font-normal text-xxs17px xl:text-lg xl:pr-0 xs:pr-[30px] pr-0 capitalize max-w-fit"
+        class="font-normal text-xxs17px blg:!text-lg xl:pr-0 xs:pr-[30px] pr-0 capitalize max-w-fit"
       >
       ${buildingData.detalii}      
       </p>

@@ -4,9 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 .swiper {
-  max-height: 276px;
   width: auto;
-  height: 100%;
+  height: auto;
+}
+img{
+  object-fit: cover;
 }
 .swiper2 {
   width: 100%;
@@ -130,4 +132,11 @@ width: 70px !important;
 .second-input div input , .third-input div input {
   width: 120px !important;
 }
+}
+
+@media only screen and (min-width: 992px) {
+  #removeDiv{
+    flex-grow: 1;
+  }
+  
 }
